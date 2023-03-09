@@ -4,7 +4,7 @@ import axios from "axios";
 function App() {
   const [data, setData] = useState("");
   const getData = async () => {
-    await axios.get("http://localhost:8080/main")
+    await axios.get("http://34.237.69.168:8080/main")
         .then((res) => {
           setData(res.data);
         })
